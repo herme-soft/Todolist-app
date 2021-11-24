@@ -2,7 +2,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #bfe3da !important; */
   background-image: url('./assets/img/hero1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
