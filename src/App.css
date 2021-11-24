@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+.navbar {
+  background: #000000 !important;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand .logo {
+  font-size: 3rem;
+  color: #44bfa3;
+  margin-right: 0.5rem;
+}
+
+form input.form-control {
+  background: rgba(58, 161, 138, 0.6);
+  border-color: rgba(58, 161, 138, 0.5);
+  height: 3rem;
+  padding-left: 1.5rem;
+  margin-right: 0.5rem;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+form ::placeholder {
+  font-size: 1.1rem !important;
+  color: #caf9ee !important;
+}
+
+form ::-webkit-input-placeholder {
+  font-size: 1.1rem !important;
+  color: #caf9ee !important;
+}
+
+form :-ms-input-placeholder {
+  font-size: 1.1rem !important;
+  color: #caf9ee !important;
+}
+
+form input[type=text]:active {
+  background-color: rgba(58, 161, 138, 0.6) !important;
+}
+
+form input[type=text]:focus {
+  background-color: rgba(58, 161, 138, 0.6) !important;
+  border: 1px solid rgba(58, 161, 138, 0.6) !important;
+  box-shadow: 0px 0 9px 7px #3aa199;
+
+  color: #caf9ee;
+} 
+
+ul.list-group li {
+  padding: 1rem !important;
+  color: #fff;
+  font-size: 1.1350rem;
+  font-weight: 500;
+  background: #3aa18a;
+  border: 1px solid #3aa18a !important;
+  border-radius: 5px;
+  transition: .1s ease-in;
+}
+
+ul.list-group li:hover {
+  color: #3aa18a;
+  background: #fff;
+  cursor: pointer;
+  transition: .1s ease-in;
+}
+
+button.btn-success {
+  background: transparent !important;
+  border: 2px solid #fff !important;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button.btn-success:hover {
+  background: rgba(41, 128, 109, 0.6) !important;
+  border-color: rgba(41, 128, 109, 0.6) !important;
+}
+
+button.btn-success:active {
+  outline: none !important;
+}
+
+.trash {
+  font-size: xx-large;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
+.trash:hover {
+  color: red;
+  transition: .1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    height: 100vh;
+  }
+
+  .navbar .navbar-brand .logo {
+    font-size: 2.5rem;
+  }
+
+  .navbar .navbar-brand h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-container {
+    padding: 0 1.5rem;
+  }
+
+  form input.form-control {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: 2rem 0.3rem 2rem 0;
+  }
+
+  ul.list-group li {
+    padding: 0.5rem !important;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: #3aa18a;
+    border: 1px solid #3aa18a !important;
+    border-radius: 5px;
+  }
+
+  .trash {
+    font-size: x-large;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+
+  form .btn-success {
+    font-size: 0.8rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1024px) and (max-width: 1336px) {
+  .App {
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar .navbar-brand .logo {
+    font-size: 3rem;
+  }
+
+  .navbar .navbar-brand h1 {
+    font-size: 2rem;
+  }
+
+  form input.form-control {
+    height: 2.8rem;
+    font-size: 1rem;
+    margin: 2rem 0.3rem 2rem 0;
+  }
+
+  form .btn-success {
+    font-size: 1rem;
   }
 }
