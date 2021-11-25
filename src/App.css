@@ -146,7 +146,9 @@ button.btn-success:active {
 
   form .btn-success {
     font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
+  
 }
 
 @media (min-width: 1024px) and (max-width: 1336px) {
